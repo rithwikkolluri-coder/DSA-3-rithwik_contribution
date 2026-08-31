@@ -1,0 +1,24 @@
+# Literature Survey and Research
+
+**Author:** K. Rithwik (Roll No.: 2520030428)
+**Project:** Automated Student-to-Laboratory Allocation System Using Maximum Bipartite Matching
+
+## 1. Core Graph Theory and Mathematical Modeling
+* The system models students and laboratories as two disjoint sets in a bipartite graph where edges represent specific preferences.
+* The objective is to find a **maximum matching**, maximizing the total number of assignments without any shared endpoints.
+* Berge's Lemma provides the theoretical foundation, proving mathematically that a matching is maximum if and only if no augmenting paths exist.
+
+## 2. Algorithm Analysis and Time Complexity
+* Standard Depth-First Search (DFS) or Breadth-First Search (BFS) approaches find augmenting paths sequentially, operating in $O(V \times E)$ time.
+* The Hopcroft-Karp algorithm optimizes this search by finding multiple disjoint augmenting paths simultaneously, achieving a faster $O(E \sqrt{V})$ time.
+* Unweighted bipartite matching is strictly utilized in this model, as all student preferences are evaluated with equal priority rather than ranked weights.
+
+## 3. Real-World Scheduling Applications
+* Bipartite matching is historically utilized to solve complex, large-scale assignment problems like the National Resident Matching Program.
+* Universities widely implement these exact graph algorithms to automate timetable generation, course registration, and facility distribution.
+* Transitioning to algorithmic matching eliminates human bias, ensures fairness, and maximizes overall resource utilization.
+
+## 4. Limitations of Existing Manual Systems
+* Manual allocation fails to scale efficiently when student populations grow and overlapping preferences become tangled.
+* Simple greedy algorithms often trap systems in sub-optimal, maximal matchings rather than calculating the true maximum matching.
+* Graph-based automation resolves these bottlenecks by mathematically guaranteeing the highest possible successful assignment rate while respecting constraints.
